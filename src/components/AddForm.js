@@ -7,6 +7,7 @@ import Cookies from 'js-cookie'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 const AddForm = (props) => {
   const [state1,setState1]=useState('')
  // const history = useHistory();
@@ -28,14 +29,19 @@ const AddForm = (props) => {
   const onSubmit=async(data)=>{
   console.log(platform+name+data.url)
     Cookies.set('platform',`${platform}`)
-    const response=await axios.post("http://localhost:3001/user/addexchange",{
+    console.log("in submit")
+    const response=await axios.post("https://subfillapi.herokuapp.com/user/addexchange",{
     username:cookieobject.loginuser,
     url:data.url,
     platform:platform,
      type:name,
     })
-
-    setState1("Successfully saved user",()=>console.log("saved the state"))
+    if(response){
+      setState1("Successfully Added")
+    }
+    else{
+      setState1("sorry request failed")
+    }
    
   }
    let str=props.match.url
@@ -73,9 +79,10 @@ const AddForm = (props) => {
   </div>
   
   <button className={`ui ${state===false?`disabled`:null} button`} type="submit">Submit</button>
+
 </form>
-{console.log(state1)}
-{state1}
+{state1==='Successfully Added'?<div class="ui success message center aligned container">Successfully Added The URL <Link to="/viewexchange">Go To ViewExchange</Link></div>:null}
+
             </div>
       
        

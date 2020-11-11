@@ -56,10 +56,10 @@ const AddExchange = () => {
                             <div class="ui clearing divider"></div>
                             <h3>Facebook <i class="facebook icon"></i></h3>
   <Link to={`/addform/Like$blue&facebook`} class="ui inverted primary button"> <i class="thumbs up outline icon"></i> Like</Link>
-  <Link to={`/addform/Following$blue`}  class="ui inverted primary button"><i class="user plus icon"></i> Following               </Link>
-  <Link to={`/addform/Comment$blue`} class="ui inverted primary button"> <i class="comment alternate outline icon"></i> Comment</Link>
-  <Link to={`/addform/Share$blue`} class="ui inverted primary button"> <i class="share icon"></i> Share                      </Link>
-  <Link to={`/addform/Video$blue`} class="ui inverted primary button"> <i class="video icon"></i> Video                      </Link>
+  <Link to={`/addform/Following$blue&facebook`}  class="ui inverted primary button"><i class="user plus icon"></i> Following               </Link>
+  <Link to={`/addform/Comment$blue&facebook`} class="ui inverted primary button"> <i class="comment alternate outline icon"></i> Comment</Link>
+  <Link to={`/addform/Share$blue&facebook`} class="ui inverted primary button"> <i class="share icon"></i> Share                      </Link>
+  <Link to={`/addform/Video$blue&facebook`} class="ui inverted primary button"> <i class="video icon"></i> Video                      </Link>
   <div class="ui clearing divider"></div>
 
 
@@ -67,11 +67,11 @@ const AddExchange = () => {
 
                             <h3>YouTube <i class="youtube icon"></i></h3>
                         
-                            <Link class="ui inverted red button " to={`/addform/like$red`}><i class="thumbs up outline icon"></i> Like</Link>
-  <Link class="ui inverted red button" to={`/addform/Subscribe$red`}> <i class="youtube square icon"   ></i> Subscribe</Link>
-  <Link class="ui inverted red button"to={`/addform/Comment$red`}><i class="comment alternate outline icon"></i>  Comment</Link>
-  <Link class="ui inverted red button"to={`/addform/Share$red`}> <i class="share icon"></i> Share</Link>
-  <Link class="ui inverted red button"to={`/addform/Video$red`}>  <i class="video icon"></i>  Video</Link>
+                            <Link class="ui inverted red button " to={`/addform/like$red&youtube`}><i class="thumbs up outline icon"></i> Like</Link>
+  <Link class="ui inverted red button" to={`/addform/Subscribe$red&youtube`}> <i class="youtube square icon"   ></i> Subscribe</Link>
+  <Link class="ui inverted red button"to={`/addform/Comment$red&youtube`}><i class="comment alternate outline icon"></i>  Comment</Link>
+  <Link class="ui inverted red button"to={`/addform/Share$red&youtube`}> <i class="share icon"></i> Share</Link>
+  <Link class="ui inverted red button"to={`/addform/Video$red&youtube`}>  <i class="video icon"></i>  Video</Link>
   <div class="ui clearing divider"></div>
 
 

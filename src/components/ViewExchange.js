@@ -25,7 +25,7 @@ import List from './list'
 
         let platform = Cookies.get('platform')
  
-        axios.post('http://localhost:3001/user/viewexchange',{platform})
+        axios.post('https://subfillapi.herokuapp.com//viewexchange',{platform})
         .then(res=>{
           console.log(res)
           this.setState({list:res.data})
@@ -50,24 +50,19 @@ let di=item
           
           <Navbar />
           <Navbar2 />
+          <h1 class="ui red center aligned massive header" id="header">ViewExchange</h1>
           <div class="ui container raised segment">
           <div class="ui huge header red ribbon label">
           Dashboard
           </div>
 
-          <div class="ui compact menu" style={{display:'block',marginRight:900,marginTop:20}}> 
-          <h3 class="item">
-    <i class="icon mail"></i>Like
-    <div class="floating ui red label">notifications</div>
-  </h3>
-          </div>
-          <div>refresh</div>
+     
               <div>
           {_.isEmpty(Cookies.get())?null:<List value={this.state.list} />}
           
                   </div>  
                   </div>
-   
+
         </div>
     );
       }

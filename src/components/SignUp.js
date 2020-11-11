@@ -16,7 +16,7 @@ const SignUp = (props) => {
     const history = useHistory();
     const {handleSubmit,register,errors}=useForm()
     const onSubmit=async ({username,password})=>{
-        const response=await axios.post("http://localhost:3001/user/signup",{username,password})
+        const response=await axios.post("https://subfillapi.herokuapp.com/user/signup",{username,password})
     
         Cookies.set(`user`,{loginuser:`${username}`})
         console.log(Cookies.get('user'))
