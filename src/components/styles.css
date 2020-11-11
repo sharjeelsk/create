@@ -1,0 +1,71 @@
+#h2cont{
+    margin-left:30em
+}
+
+#signinlink{
+    padding-top:20;
+    transition:.2s;
+}
+#signinlink:hover{
+    color:red;
+}
+.image{
+    display:block;
+    margin:0 auto;
+ width:10rem;
+   
+}
+#header{
+    font-family: 'Oswald', sans-serif;
+}
+
+#content{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.row{
+    margin-top: 5rem;
+}
+.col{
+    margin-top: 5rem;
+}
+
+.keys{
+    margin-top: 5rem;
+}
+
+.keysImg{
+    width: 3rem;
+    margin:0 auto;
+    display: block;
+}
+.keystitle{
+    display: block;
+    text-align: center;
+}
+.clasucard{
+    margin:0 auto;
+    text-align: center;
+}
+.footerh1{
+    display:block;
+    text-align:center;
+    font-size:5rem
+}
+.link{
+    color:white;
+}
+.link:hover{
+    color:#dadada;
+    transition:.2s;
+}
+
+.points{
+    margin-right: 2.7rem;
+}
+.para{
+    font-size: 1.2rem;
+    line-height: 2;
+    margin:10% auto;
+}
